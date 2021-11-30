@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3vw;
+  color: white
+}
+
+a:visited {
+  color:black
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 380px);
+  grid-template-rows: repeat(8, 105px);
+  grid-gap: 10px;
+  background-color: black;
+  width: fit-content;
+}
+
+.yellow {
+  background-color: #F2B90C;
+}
+
+.blue {
+  background-color: #304673;
+}
+
+.white {
+  background-color: #F2F2F2;
+}
+
+.red {
+  background-color: #BF212E;
+}
+.black {
+  background-color: black;
+}
+
+.primer-blanc {
+  grid-column: 1/3;
+}
+.segon-groc {
+  grid-column: 3/6;
+}
+
+.tercer-roig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/6;
+  grid-column: 1/3;
+}
+
+.quart-groc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/4;
+  grid-column: 3/5;
+}
+.cinque-blanc {
+  grid-row: 4/6;
+}
+.sise-blanc {
+  grid-row: 4/6;
+}
+
+.septim-negre{
+  grid-row: 6/8
+}
+
+.octau-blanc {
+  grid-column: 2/3;
+}
+
+.nove-blanc {
+  grid-column: 3/6;
+}
+
+.decim-blanc {
+  grid-column: 2/3;
+}
+
+.onze-blau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 7/9;
+  grid-column: 3/6;
+}
+
+.dotze-blanc {
+  grid-row: 8/9;
+}
+
+.ultim-blanc {
+  grid-row: 8/9;
+  grid-column: 2/5;
+}
+
+.groc-dalt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row:  2/6;
+  grid-column: 5/6;  
+
+}
+
+
+@media (max-width: 320px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(10, 105px);
+    grid-gap: 3px;
+    background-color: black;
+  }
+
+  .groc-dalt{
+    grid-row:  9/11;
+    grid-column: 1/-1;  
+  
+  }
+}
+@media (min-width: 321px) and (max-width: 845px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(10, 10vh);
+    grid-gap: 3px;
+    background-color: black;
+  }
+
+  .groc-dalt{
+    grid-row:  9/11;
+    grid-column: 1/5;  
+  }
+
+  .tercer-roig {
+    grid-row: 5/7;
+    grid-column: 3/4;
+  }
+}
